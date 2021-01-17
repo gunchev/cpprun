@@ -1,0 +1,17 @@
+TODO
+====
+
+
+Use one of the following:
+
+ - the stdin compilation trick:
+    cat test.cpp | g++ -x c++ -
+
+ - the shebang "hack" (no shebang, directly sh commands) to make the first line real comment.
+
+ - (best) Compile somethign from PWD, just make sure we don't overwrite anything else.
+
+ - and of course, we can symlink everyting from the main source's directory to the temp...
+
+
+Write it in C and/or C++.
