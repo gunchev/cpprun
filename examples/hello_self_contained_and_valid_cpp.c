@@ -1,6 +1,4 @@
-/*usr/bin/true; A="$(readlink -f -- "$0")"; function x { rm "$A.bin"; }; trap x EXIT; cc -Wall "$A" -o "$A.bin"; "$A.bin"; E=$?; exit $E; # */
-
-// Looks like we can pull up the same trick in C.
+/*/true;A="$(readlink -f -- "$0")";cc -Wall -o "$A.bin" "$A" && "$A.bin";E=$?;rm "$A.bin";exit $E #*/
 
 #include <stdio.h>
 
